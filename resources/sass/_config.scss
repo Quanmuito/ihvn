@@ -1,0 +1,29 @@
+$primary-color: #0f0f0f;
+$secondary-color:#aeaeae;
+$color-white: #fff;
+$color-orange: rgb(204, 105, 59);
+$color-grey:#626C74;
+$color-red:#D3434D;
+$color-lblue:#7BBFBF;
+$color-dblue:#06A0B3;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%)
+    {
+        @return #000000;
+    }
+    @else
+    {
+        @return #ffffff;
+    }
+}

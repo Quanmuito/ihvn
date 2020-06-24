@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 100px;
+  text-align: center;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.nav-bar {
+  margin-top: 20px;
+}
+
+.nav-bar nav {
+  margin: 0;
+}
+
+.nav-bar nav ul ul {
+  display: none;
+}
+
+.nav-bar nav ul li:hover > ul {
+  display: block;
+}
+
+.nav-bar nav ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar nav ul a {
+  width: 150px;
+  height: 50px;
+  padding: 15px;
+  display: block;
+  font-family: "Alfa Slab One";
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.nav-bar nav ul a:hover {
+  color: #cc693b;
+  font-style: italic;
+}
+
+.nav-bar nav ul ul {
+  position: relative;
+}
+
+.nav-bar nav ul ul li {
+  position: relative;
+}
+
+.nav-bar nav ul ul li ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+body {
+  height: 100vh;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+  background: url("/img/bg/red-background.png") no-repeat center fixed;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  z-index: 1;
+}
+
